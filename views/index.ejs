@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacation</title>
+  <link rel="icon" href="images/vacation.png">
+<link rel="stylesheet" href="styles/styles.css">
+  <script src="js/vacation.js" defer></script>
+</head>
+<body>
+  <header class = "hero">
+    <div class="hero-text"></div>
+    <h1>Book Your Dream Vacation</h1>
+  </header>
+
+  <main>
+    <form id="vacation" action="/confirm" method="post">
+      
+
+        <!-- Destination -->
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <select name="destination" id="destination" >
+            <option value="">Choose a destination...</option>
+            <option value="bali">Bali, Indonesia</option>
+            <option value="paris">Paris, France</option>
+            <option value="tokyo">Tokyo, Japan</option>
+            <option value="maldives">Maldives</option>
+            <option value="nyc">New York City, USA</option>
+          </select>
+        </div>
+
+        <!-- Departure Date -->
+         <div class ="form-row">
+        <div class="form-group">
+          <label for="date">Departure Date</label>
+          <input type="date" id="date" name="date" >
+        </div>
+
+        <!-- Number of Travelers -->
+        <div class="form-group">
+          <label for="number">Number of Travelers</label>
+          <input type="number" id="number" name="number" min="1" value="1" >
+        </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" id="order-button">Find My Vacation</button>
+        </div>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Reset defaults */
+* {
+
+  box-sizing: border-box; /* for the space between departure date and num
+  and number of travelers */
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  padding: 50px;
+}
+/* this is for OVERRIDING the  body background for the confirmation page */
+.confirmation-body {
+  background-color: white;
+}
+
+/* Container for the header image and text/form */
+header {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background: url('https://bit.ly/305-vacation') center/cover no-repeat;
+  color: white;
+}
+
+/* For Text inside the image */
+header h1 {
+  font-size: 3rem;
+  
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Form container */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Button styling */
+/* Make the submit button smaller and rounded */
+button {
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 50%;         /* <-- this makes it small size */
+  display: block;
+  margin: 1rem auto 0; /* <-- centers it horizontally inside the form */
+  transition: 0.3s;
+}
+
+
+button:hover {
+  background: linear-gradient(to right, #0056d2, #003a99); /*change the color when almost clicking */
+}
+
+/* Make the two form groups align horizontally */
+.form-row {
+  display: flex;
+  gap: 1rem; /* spacing between them */
+  
+}
+
+/* Make each one take equal width */
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Highlight invalid input */
+.error {
+  border: 2px solid red;
+}
+
